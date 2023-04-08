@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import PageA from './components/PageA';
 import PageB from "./components/PageB";
 
-// Renderizando rotas na forma antiga do react-router-dom
+// Renderizando rotas com children
 
 // function App() {
 //   return (
@@ -38,7 +38,7 @@ export default  function App() {
   return (
     <BrowserRouter>
       <Routes>
-      {/* Quando for feito o match nessa rota, o Outlet renderizara os elementos da rota filho */}
+      {/* Quando for feito o match na rota, o Outlet renderizara os elementos da rota filho correspondente */}
         <Route path='/' element={<Layout />}> 
           <Route path='a' element={<PageA />}/>
           <Route path='b' element={<PageB />}/>
